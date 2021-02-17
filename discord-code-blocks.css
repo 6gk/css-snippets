@@ -1,17 +1,18 @@
 /* display info about code blocks */
+/* warning: seems to occasionally break depending on your font, if so try fiddle with some numbers before reporting a bug */
 code.hljs:not(.inline)::before {
 	content: attr(class) !important;
 	float: right;
 	display: block;
 	width: auto;
-	max-width:  6em !important;
+	max-width:  6.6em !important;
 	min-width:  auto;
-	margin-top: -8.5em !important;
+	margin-top: -8.6em !important;
 	line-height: 1.6em !important;
 	overflow-x: hidden;
 	scrollbar-width: none;
 	text-align: right;
-	font-size: 0.8em !important;
+	font-size: 0.9em;
 	opacity: 0.6;
 }
 /* subtle code block styling */
